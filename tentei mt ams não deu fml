@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main()
+{
+    int i = 0;
+    int n1[20];
+    int n2;
+    int n3[1];
+    int i2 = 21;
+
+    printf("oq vc quer saber sobre o codigo?\n");
+    printf("digite 0 para saber o maior numero ");
+    printf("digite 1 para saber o menor numero ");
+    printf("digite 2 para saber a ordem decrescente\n");
+    scanf_s("%d", &n2);
+
+    while (i < 21)
+    {
+  
+        n1[i] = i;
+        printf("n1[%d]=%d\n", i, n1[i]);
+        i++;
+    }
+   
+    switch (n2)
+    {
+    case 0:
+           printf("esse numero e maior numero %d\n", --i);
+           break;
+
+    case 1:
+        printf("esse e o menor numero %d\n", i-i);
+        break;
+
+    case 2:
+        while (i2 < -1)
+        {
+
+            n3[i2] = i2;
+            printf("n1[%d]=%d\n", i2, n3[i2]);
+            --i;
+        }
+        break;
+
+    default:
+        break;
+    }
+       
+    return 0;
+
